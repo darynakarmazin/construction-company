@@ -156,11 +156,32 @@ header {
 .projects-section .text strong {
   color: var(--main-font-color);
 }
+
+/* YEARS SECTION */
+.years-section {
+  position: relative;
+  height: 100vh;
+  min-height: 680px;
+  background-image: url("../image/years/years-bg@1x.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.years-section h2 {
+  text-align: center;
+  padding-top: 24px;
+  font-size: 50px;
+  line-height: 1.1;
+}
+
 /* RETINA */
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .hero-section {
     background-image: url("../image/hero/curved-shape.svg"),
       url("../image/hero/hero-bg@2x.webp");
+  }
+  .years-section {
+    background-image: url("../image/years/years-bg@2x.webp");
   }
 }
 
@@ -188,6 +209,9 @@ header {
     display: none;
   }
   .hero-section {
+    min-height: 1080px;
+  }
+  .years-section {
     min-height: 1080px;
   }
   .hero-section .hero-wrapper {
@@ -227,6 +251,10 @@ header {
   .projects-section .text {
     max-width: 925px;
     font-size: 42px;
+  }
+  .years-section h2 {
+    padding-top: 50px;
+    font-size: 140px;
   }
 }
 
