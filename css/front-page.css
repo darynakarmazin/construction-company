@@ -6,7 +6,6 @@ header {
   z-index: 2;
   transform: translateX(-50%);
 }
-
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -14,12 +13,10 @@ header {
   padding-top: 8px;
   padding-bottom: 8px;
 }
-
 .header-container .logo {
   max-width: 113px;
   height: auto;
 }
-
 .header-container nav ul {
   display: none;
 }
@@ -28,11 +25,9 @@ header {
   gap: 8px;
   align-items: center;
 }
-
 .header-container .burger-btn {
   display: flex;
 }
-
 .header-container button {
   border-radius: 50%;
   border: none;
@@ -46,7 +41,32 @@ header {
   align-items: center;
   justify-content: center;
 }
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 1rem;
+}
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.mobile-menu li {
+  margin-bottom: 1rem;
+}
+.mobile-menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+.mobile-menu.active {
+  display: block;
+}
 
+/* HERO SECTION */
 .hero-section {
   position: relative;
   height: 100vh;
@@ -136,6 +156,10 @@ header {
     margin-right: 180px;
   }
   .header-container .burger-btn {
+    display: none;
+  }
+  .mobile-menu,
+  .mobile-menu.active {
     display: none;
   }
   .hero-section {
