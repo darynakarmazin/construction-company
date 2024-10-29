@@ -23,4 +23,18 @@ approach. For formation, used Prettier. Used custom fonts, GSAP.js and Swiper.js
 
 # Validator report
 
-![Lighthouse](https://github.com/darynakarmazin/construction-company/blob/main/image/validator-report.png)
+![Validator](https://github.com/darynakarmazin/construction-company/blob/main/image/validator-report.png)
+
+Hero Section
+
+![Hero](https://github.com/darynakarmazin/construction-company/blob/main/image/hero-report.png)
+
+Slider Section
+
+![Slider](https://github.com/darynakarmazin/construction-company/blob/main/image/slider-report.png)
+
+Years Section
+
+![Years](https://github.com/darynakarmazin/construction-company/blob/main/image/years-report.png)
+
+
