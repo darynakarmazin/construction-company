@@ -1,0 +1,15 @@
+.header-container,
+.hero-wrapper-title,
+.hero-wrapper-button,
+.logo,
+.header-buttons,
+nav ul li {
+  opacity: 0;
+  transform: translateY(60px);
+}
+
+.hero-wrapper-title,
+.hero-wrapper-button {
+  opacity: 0;
+  transform: translateY(90px);
+}
