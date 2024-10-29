@@ -1,3 +1,52 @@
+header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 50%;
+  z-index: 2;
+  transform: translateX(-50%);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.header-container .logo {
+  max-width: 113px;
+  height: auto;
+}
+
+.header-container nav ul {
+  display: none;
+}
+.header-buttons {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.header-container .burger-btn {
+  display: flex;
+}
+
+.header-container button {
+  border-radius: 50%;
+  border: none;
+  width: 40px;
+  height: 40px;
+  background-color: var(--secondary-background-color);
+  color: var(--link-color);
+  font-size: 16px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .hero-section {
   position: relative;
   height: 100vh;
@@ -72,6 +121,23 @@
 }
 /* DESKTOP */
 @media screen and (min-width: 1440px) {
+  .header-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .header-container .logo {
+    max-width: 226px;
+  }
+  .header-container nav ul {
+    display: flex;
+    gap: 40px;
+    font-size: 17px;
+    line-height: 1.5;
+    margin-right: 180px;
+  }
+  .header-container .burger-btn {
+    display: none;
+  }
   .hero-section {
     min-height: 1080px;
   }
