@@ -132,6 +132,20 @@ header {
   background-color: var(--link-color);
   color: var(--accent-color);
 }
+
+/* PROJECT SECTION */
+.projects-section {
+  padding: 60px 0 48px;
+}
+.projects-section h2 {
+  text-wrap: nowrap;
+  font-size: 50px;
+  line-height: 1.1;
+  margin-left: 26px;
+  margin-bottom: -3.5%;
+  position: relative;
+  z-index: 5;
+}
 /* RETINA */
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .hero-section {
@@ -139,6 +153,7 @@ header {
       url("../image/hero/hero-bg@2x.webp");
   }
 }
+
 /* DESKTOP */
 @media screen and (min-width: 1440px) {
   .header-container {
@@ -191,5 +206,18 @@ header {
   .hero-section .hero-wrapper .hero-wrapper-button a {
     padding: 18px 62px;
     font-size: 16px;
+  }
+  .projects-section {
+    padding: 160px 0 148px;
+  }
+  .projects-section h2 {
+    font-size: 150px;
+    margin-left: 116px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .projects-section h2 {
+    font-size: 220px;
   }
 }

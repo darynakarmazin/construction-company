@@ -8,7 +8,12 @@
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/front-page.css" />
     <link rel="stylesheet" href="./css/animation.css" />
+    <link rel="stylesheet" href="./css/swiper-styles.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header>
@@ -73,8 +78,108 @@
           </div>
         </div>
       </section>
-      <section class="section projects-section">
-        <div class="container"></div>
+      <section class="section projects-section swiper-section">
+        <div class="container">
+          <h2>Our projects</h2>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div
+                class="swiper-slide"
+                style="background-image: url(./image/slider/background-1.png)"
+              >
+                <div class="slide-content">
+                  <div>
+                    <p>Villa</p>
+                    <h3>Lorem Ipsum</h3>
+                  </div>
+                  <a href="#" class="slide-link"
+                    ><img
+                      src="./image/slider/arrow.svg"
+                      width="24"
+                      height="24"
+                      alt="arrow read more"
+                  /></a>
+                </div>
+              </div>
+              <!-- Slide 2 -->
+              <div
+                class="swiper-slide"
+                style="background-image: url(./image/slider/background-2.png)"
+              >
+                <div class="slide-content">
+                  <div>
+                    <p>Villa</p>
+                    <h3>Lorem Ipsum</h3>
+                  </div>
+                  <a href="#" class="slide-link"
+                    ><img
+                      src="./image/slider/arrow.svg"
+                      width="24"
+                      height="24"
+                      alt="arrow read more"
+                  /></a>
+                </div>
+              </div>
+              <!-- Slide 3 -->
+              <div
+                class="swiper-slide"
+                style="background-image: url(./image/slider/background-3.png)"
+              >
+                <div class="slide-content">
+                  <div>
+                    <p>Apartments</p>
+                    <h3>Lorem Ipsum</h3>
+                  </div>
+                  <a href="#" class="slide-link"
+                    ><img
+                      src="./image/slider/arrow.svg"
+                      width="24"
+                      height="24"
+                      alt="arrow read more"
+                  /></a>
+                </div>
+              </div>
+              <!-- Slide 4 -->
+              <div
+                class="swiper-slide"
+                style="background-image: url(./image/slider/background-4.png)"
+              >
+                <div class="slide-content">
+                  <div>
+                    <p>Townhouses</p>
+                    <h3>Lorem Ipsum</h3>
+                  </div>
+                  <a href="#" class="slide-link"
+                    ><img
+                      src="./image/slider/arrow.svg"
+                      width="24"
+                      height="24"
+                      alt="arrow read more"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div class="navigation-btns">
+              <button class="button-prev" aria-label="button prev">
+                <img
+                  src="./image/slider/arrow.svg"
+                  width="24"
+                  height="24"
+                  alt="arrow"
+                />
+              </button>
+              <button class="button-next" aria-label="button next">
+                <img
+                  src="./image/slider/arrow.svg"
+                  width="24"
+                  height="24"
+                  alt="arrow "
+                />
+              </button>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="section years-section">
         <div class="container"></div>
@@ -83,5 +188,7 @@
     <footer></footer>
     <script src="./js/burger-menu.js"></script>
     <script src="./js/animation.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/swiper-config.js"></script>
   </body>
 </html>
