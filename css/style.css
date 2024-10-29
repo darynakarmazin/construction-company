@@ -1,0 +1,137 @@
+@import-normalize; /* bring in normalize.css styles */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Inter Font*/
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/Inter-Bold.woff2") format("woff2"),
+    url("./fonts/Inter-Bold.woff") format("woff"),
+    url("./fonts/Inter-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Gilroy Font*/
+@font-face {
+  font-family: "Gilroy";
+  src: url("./fonts/Gilroy-Bold.woff2") format("woff2"),
+    url("./fonts/Gilroy-Bold.woff") format("woff"),
+    url("./fonts/Gilroy-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  /* Font colors */
+  --main-font-color: #ffffff;
+  --secondary-font-color: #2c2c2c;
+  --link-color: #4d4d4d;
+  --accent-color: #ffc711;
+
+  /* Background colors */
+  --main-background-color: #93cadf;
+  --secondary-background-color: #ffffff;
+
+  /* Animation */
+  --transition-dur-and-func: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--main-background-color, #181818);
+  color: var(--main-font-color, #ffffff);
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a,
+button {
+  cursor: pointer;
+  text-decoration: none;
+  font-family: inherit;
+  color: inherit;
+  padding: 0;
+}
+
+img {
+  padding: 0;
+  margin: 0;
+}
+
+.hidden-element {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.container {
+  width: 100%;
+  min-width: 360px;
+  height: 100%;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* MOBILE */
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 100%;
+    min-width: 1440px;
+    max-width: 1920px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}

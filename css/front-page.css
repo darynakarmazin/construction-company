@@ -1,0 +1,105 @@
+.hero-section {
+  position: relative;
+  height: 100vh;
+  min-height: 680px;
+  background-image: url("../image/hero/curved-shape.svg"),
+    url("../image/hero/hero-bg@1x.webp");
+  background-size: auto 100%, cover;
+  background-position: right, center;
+  background-repeat: no-repeat;
+}
+.hero-section .hero-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  gap: 40px;
+  padding-bottom: 40px;
+  padding-top: auto;
+}
+.hero-section .hero-wrapper .hero-wrapper-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  max-width: 75%;
+}
+.hero-section .hero-wrapper .hero-wrapper-title p {
+  font-size: 12px;
+  line-height: 1;
+}
+.hero-section .hero-wrapper .hero-wrapper-title h1 {
+  font-size: 50px;
+  line-height: 1;
+}
+.hero-section .hero-wrapper .hero-wrapper-button {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+  max-width: 100%;
+}
+.hero-section .hero-wrapper .hero-wrapper-button p {
+  font-size: 16px;
+  line-height: 1.1;
+  text-align: right;
+}
+.hero-section .hero-wrapper .hero-wrapper-button p strong {
+  color: var(--accent-color);
+}
+.hero-section .hero-wrapper .hero-wrapper-button a {
+  background-color: var(--accent-color);
+  border-radius: 24px;
+  padding: 9px 31px;
+  font-size: 12px;
+  color: var(--link-color);
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  line-height: 1;
+  transition: all var(--transition-dur-and-func);
+}
+.hero-section .hero-wrapper .hero-wrapper-button a:hover,
+.hero-section .hero-wrapper .hero-wrapper-button a:focus {
+  background-color: var(--link-color);
+  color: var(--accent-color);
+}
+/* RETINA */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hero-section {
+    background-image: url("../image/hero/curved-shape.svg"),
+      url("../image/hero/hero-bg@2x.webp");
+  }
+}
+/* DESKTOP */
+@media screen and (min-width: 1440px) {
+  .hero-section {
+    min-height: 1080px;
+  }
+  .hero-section .hero-wrapper {
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+    padding-bottom: 120px;
+  }
+  .hero-section .hero-wrapper .hero-wrapper-title {
+    gap: 40px;
+    max-width: 677px;
+  }
+  .hero-section .hero-wrapper .hero-wrapper-title p {
+    font-size: 24px;
+  }
+  .hero-section .hero-wrapper .hero-wrapper-title h1 {
+    font-size: 150px;
+  }
+  .hero-section .hero-wrapper .hero-wrapper-button {
+    gap: 40px;
+    max-width: 510px;
+  }
+  .hero-section .hero-wrapper .hero-wrapper-button p {
+    font-size: 42px;
+  }
+  .hero-section .hero-wrapper .hero-wrapper-button a {
+    padding: 18px 62px;
+    font-size: 16px;
+  }
+}
