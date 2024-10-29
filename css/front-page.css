@@ -226,10 +226,10 @@ header {
     display: none;
   }
   .hero-section {
-    min-height: 1080px;
+    min-height: 900px;
   }
   .years-section {
-    min-height: 1080px;
+    min-height: 900px;
   }
   .hero-section .hero-wrapper {
     flex-direction: row;

@@ -31,11 +31,11 @@ document.addEventListener("DOMContentLoaded", () => {
     .to(
       ".hero-wrapper-title",
       { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" },
-      "-=0.5"
+      "-=0.15"
     )
     .to(
       ".hero-wrapper-button",
       { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" },
-      "-=0.5"
+      "-=0.15"
     );
 });
