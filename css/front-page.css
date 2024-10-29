@@ -146,6 +146,16 @@ header {
   position: relative;
   z-index: 5;
 }
+.projects-section .text {
+  color: var(--secondary-font-color);
+  max-width: 80%;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 0.95;
+}
+.projects-section .text strong {
+  color: var(--main-font-color);
+}
 /* RETINA */
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .hero-section {
@@ -213,6 +223,10 @@ header {
   .projects-section h2 {
     font-size: 150px;
     margin-left: 116px;
+  }
+  .projects-section .text {
+    max-width: 925px;
+    font-size: 42px;
   }
 }
 

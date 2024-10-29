@@ -4,6 +4,7 @@
 
 .swiper-container {
   width: 100%;
+  margin-bottom: 48px;
 }
 
 .swiper-slide {
