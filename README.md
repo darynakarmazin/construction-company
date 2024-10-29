@@ -19,8 +19,8 @@ approach. For formation, used Prettier. Used custom fonts, GSAP.js and Swiper.js
 
 # Lighthouse report
 
-![Lighthouse](https://github.com/darynakarmazin/carp-travel/raw/main/image/lighthouse-report.png)
+![Lighthouse](https://github.com/darynakarmazin/construction-company/blob/main/image/lighthouse-report.png)
 
 # Validator report
 
-![Lighthouse](https://github.com/darynakarmazin/carp-travel/raw/main/image/validator-report.png)
+![Lighthouse](https://github.com/darynakarmazin/construction-company/blob/main/image/validator-report.png)
